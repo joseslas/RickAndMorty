@@ -34,13 +34,13 @@ const Form = ({login}) => {
             <form onSubmit={handleSubmit} className="login animate__animated animate__fadeInDown">
             <h1 className="form-title">Login</h1>
             <label htmlFor="email">Email:</label>
-            <span className="icono1"><AiOutlineMail/></span>
+            <span className="icon1"><AiOutlineMail/></span>
             <input name="email" type="email" value={userData.email} placeholder="name@mail.com" onChange={placeHolder}/>
-            {errors?.email ? <p className="error">{errors.email}</p> : errors.email = ""}
+            {errors?.email ? <p className="email">{errors.email}</p> : errors.email = ""}
             <label htmlFor="password">Password:</label>
-            <span className="icono2"><AiOutlineLock className/></span>
+            <span className="icon2"><AiOutlineLock/></span>
             <input name="password" type="password" value={userData.password} placeholder="Password" onChange={placeHolder}/>
-            {errors?.password ? <p>{errors.password}</p> : errors.password = ""}
+            {errors?.password ? <p className="password">{errors.password}</p> : errors.password = ""}
             <br />
             <button type="submit">Ingresar</button>
     </form>
